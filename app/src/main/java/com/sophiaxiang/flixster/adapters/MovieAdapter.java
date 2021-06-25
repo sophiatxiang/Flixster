@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.sophiaxiang.flixster.MovieDetailsActivity;
 import com.sophiaxiang.flixster.R;
+import com.sophiaxiang.flixster.databinding.ItemMovieBinding;
 import com.sophiaxiang.flixster.models.Movie;
 
 import org.jetbrains.annotations.NotNull;
@@ -43,6 +44,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         Log.d("MovieAdapter", "onCreateViewHolder");
         View movieView = LayoutInflater.from(context).inflate(R.layout.item_movie, parent, false);
         return new ViewHolder(movieView);
+        /**
+        ItemMovieBinding itemMovieBinding = ItemMovieBinding
+                .inflate(LayoutInflater.from(context), parent, false);
+        return new ViewHolder(itemMovieBinding);
+         **/
     }
 
     // Involves populating data into the item through holder
