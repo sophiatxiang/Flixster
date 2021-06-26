@@ -17,18 +17,30 @@
         tools:srcCompat="@tools:sample/avatars"
         android:onClick="launchMovieTrailerActivity"/>
 
+    <ImageView
+        android:id="@+id/ivPlayBtn"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:onClick="launchMovieTrailerActivity"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
     <TextView
         android:id="@+id/tvDetailsTitle"
-        android:layout_below="@+id/ivBackDrop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/ivBackDrop"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
         android:text="Movie Title"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="32sp" />
+        android:textSize="35dp" />
 
     <RatingBar
         android:id="@+id/rbVoteAverage"
@@ -36,21 +48,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvDetailsTitle"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
         android:numStars="5"
         android:scrollbarSize="4dp"
         android:stepSize=".5" />
 
     <TextView
         android:id="@+id/tvOverview"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:text="TextView"
         android:layout_below="@id/rbVoteAverage"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
 </RelativeLayout>

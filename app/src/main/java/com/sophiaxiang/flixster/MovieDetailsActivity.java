@@ -35,6 +35,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
     ImageView ivBackDrop;
     ActivityMovieDetailsBinding activityMovieDetailsBinding;
     String youtubeKey;
+    ImageView ivPlayBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         tvOverview = activityMovieDetailsBinding.tvOverview;
         rbVoteAverage = activityMovieDetailsBinding.rbVoteAverage;
         ivBackDrop = activityMovieDetailsBinding.ivBackDrop;
+        ivPlayBtn = activityMovieDetailsBinding.ivPlayBtn;
 
         //set the title and overview
         tvDetailsTitle.setText(movie.getTitle());
@@ -65,6 +67,9 @@ public class MovieDetailsActivity extends AppCompatActivity {
         Glide.with(getApplicationContext()).load(movie.getBackdropPath())
                 .placeholder(R.drawable.flicks_backdrop_placeholder)
                 .into(ivBackDrop);
+
+        Glide.with(getApplicationContext()).load(R.drawable.play_button)
+                .into(ivPlayBtn);
 
 
         AsyncHttpClient client_video = new AsyncHttpClient();
