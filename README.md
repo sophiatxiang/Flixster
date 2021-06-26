@@ -18,10 +18,10 @@ The following **required** functionality is completed:
 The following **stretch** features are implemented:
 
 * [x] Improved the user interface by experimenting with styling and coloring.
-          - Created a dark mode color scheme 
-          - Experimented with margins 
-          - Fixed ViewHolders to be equally sized regardless of movies' overview length
-          - Implemented a black background with the YouTube video centered vertically for viewing in portrait mode
+    * Created a dark mode color scheme 
+    * Experimented with margins and other formatting
+    * Fixed ViewHolders to be equally sized regardless of movies' overview length
+    * Implemented a black background with the YouTube video centered vertically for viewing in portrait mode (when not full screen)
 * [x] Apply rounded corners for the poster or background images using [Glide transformations](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#transformations)
 * [x] Apply the popular [View Binding annotation library](http://guides.codepath.org/android/Reducing-View-Boilerplate-with-ViewBinding) to reduce boilerplate code.
 * [x] Allow video trailers to be played in full-screen using the YouTubePlayerView from the details screen.
@@ -43,7 +43,7 @@ GIFs created with [Kap](https://getkap.co/).
 
 Describe any challenges encountered while building the app:
 - Initially a bit confused on how to access/use APIs and YouTubePlayerView
-- Didn't know what view binding was-- did a good amount of research to understand
+- Didn't know what view binding was- did a good amount of research to understand
 
 ## Open-source libraries used
 
